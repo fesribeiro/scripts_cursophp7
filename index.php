@@ -24,12 +24,23 @@ require_once("config.php");
 
 //echo $usuario;
 
+// Criando um novo usuário
+
+/*
 $aluno = new Usuario("Felipe", "123456789");
 
 $aluno->insert();
 
 echo $aluno;
+*/
 
+$usuario = new Usuario();
+
+$usuario->loadById(8);
+
+$usuario->update("professor", "123465@!#!@");
+
+echo $usuario;
 
 
 
